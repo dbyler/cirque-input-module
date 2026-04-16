@@ -1,7 +1,12 @@
 # Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if INPUT_PINNACLE
+config ZMK_INPUT_PINNACLE
+    bool "Cirque Pinnacle trackpad driver"
+    default y
+    depends on DT_HAS_ZMK_CIRQUE_PINNACLE_ENABLED
+
+if ZMK_INPUT_PINNACLE
 
 config INPUT_PINNACLE_INIT_PRIORITY
     int "Cirque Pinnacle initialization priority"
