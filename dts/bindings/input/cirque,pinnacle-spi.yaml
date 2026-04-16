@@ -3,4 +3,4 @@ description: |
 
 compatible: "zmk,cirque-pinnacle"
 
-include: ["spi-device.yaml", "cirque,pinnacle-common.yaml"]
+include: ["spi-device.yaml", "zmk,cirque-pinnacle-common.yaml"]
